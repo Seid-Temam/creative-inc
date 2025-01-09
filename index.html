@@ -7,6 +7,11 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>creative inc.</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="styles.css"
@@ -21,10 +26,34 @@
       />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">CONTACT</a></li>
-          <li><a href="">SERVICES</a></li>
+          <li>
+            <a
+              href="#hero"
+              class="scroll"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="scroll"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="#work"
+              class="scroll"
+              >SERVICES</a
+            >
+          </li>
+          <li>
+            <a
+              href="#cta"
+              class="scroll"
+              >CONTACT</a
+            >
+          </li>
         </ul>
       </nav>
       <ion-icon
@@ -33,7 +62,10 @@
       ></ion-icon>
     </header>
 
-    <section class="hero">
+    <section
+      class="hero"
+      id="hero"
+    >
       <div class="hero-txt-box">
         <h1 class="primary-heading">
           Making things looks great<span
@@ -48,7 +80,10 @@
       </div>
     </section>
 
-    <section class="about">
+    <section
+      class="about scroll"
+      id="about"
+    >
       <div class="container">
         <h3>Who we are</h3>
         <p>
@@ -64,7 +99,10 @@
       </div>
     </section>
 
-    <section class="work">
+    <section
+      class="work scroll"
+      id="work"
+    >
       <h2>Some of our work</h2>
       <div class="portfolio">
         <div class="project">
@@ -154,7 +192,10 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section
+      class="cta scroll"
+      id="cta"
+    >
       <div class="container">
         <h2>Like what you see? <span>Then what are you waiting for?</span></h2>
         <a
@@ -206,5 +247,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
