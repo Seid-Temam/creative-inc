@@ -66,6 +66,14 @@ header {
   flex-direction: column;
   text-align: center;
 }
+
+.hero a {
+  border: none;
+  outline: 2px solid #000;
+}
+.hero a:hover {
+  outline-offset: -0.9rem;
+}
 .primary-heading {
   font-size: 3rem;
   margin-bottom: 4rem;
@@ -203,14 +211,13 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
     grid-column: 1/-1;
-    padding: 0 2rem;
   }
 }
 .footer-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 2rem;
-
+  padding: 0 4rem;
   ul {
     list-style-type: none;
     justify-self: center;
@@ -228,7 +235,7 @@ footer {
   }
 }
 @media (min-width: 61.25rem) {
-  .logo{
+  .logo {
     width: 15rem;
   }
   .hero {
